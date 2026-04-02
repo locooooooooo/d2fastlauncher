@@ -1,0 +1,47 @@
+{
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "devPath": "http://localhost:1420",
+    "distDir": "../dist"
+  },
+  "package": {
+    "productName": "D2R Fast Launcher",
+    "version": "2.0.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": true,
+      "shell": {
+        "all": true,
+        "open": true
+      }
+    },
+    "bundle": {
+      "active": false,
+      "targets": [],
+      "identifier": "com.faliny.d2rlauncher",
+      "icon": [
+        "icons/icon.ico"
+      ]
+    },
+    "security": {
+      "csp": null
+    },
+    "updater": {
+      "active": false
+    },
+    "windows": [
+      {
+        "fullscreen": false,
+        "height": 600,
+        "resizable": true,
+        "title": "D2R Fast Launcher",
+        "width": 800,
+        "minWidth": 600,
+        "minHeight": 400,
+        "center": true
+      }
+    ]
+  }
+}
